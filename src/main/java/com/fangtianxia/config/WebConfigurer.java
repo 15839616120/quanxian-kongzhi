@@ -20,6 +20,7 @@ public class WebConfigurer implements WebMvcConfigurer {
         // 拦截Controller层
         registry.addInterceptor(systemInterceptor)
                 .addPathPatterns("/system/**")
-                .excludePathPatterns("/system/sysUser/doLogin", "/system/sysUser/logout", "/system/sysUser/getAuthorityList");
+                .excludePathPatterns("/system/sysUser/doLogin", "/system/sysUser/logout");
+                /*.excludePathPatterns("/system/sysUser/doLogin", "/system/sysUser/logout", "/system/sysUser/getAuthorityList"); 用上面的替换这一行，业务的需要*/
     }
 }
