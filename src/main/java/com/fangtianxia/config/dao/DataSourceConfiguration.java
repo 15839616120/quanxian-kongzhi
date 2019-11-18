@@ -27,7 +27,7 @@ public class DataSourceConfiguration {
     private String jdbcPassword;
 
     @Bean(name = "dataSource")
-    public DruidDataSource getDataSource() throws PropertyVetoException {
+    public DruidDataSource getDataSource() {
         // 生成datasource实例
         DruidDataSource dataSource = new DruidDataSource();
         // 跟配置文件一样设置以下信息
