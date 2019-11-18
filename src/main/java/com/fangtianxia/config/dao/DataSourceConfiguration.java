@@ -8,6 +8,9 @@ import org.springframework.context.annotation.Configuration;
 
 import java.beans.PropertyVetoException;
 
+/**
+ * @author wyz
+ */
 @Configuration
 //配置mybatis   mapper的扫描路径
 @MapperScan("com.fangtianxia.dao")

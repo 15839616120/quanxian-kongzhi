@@ -5,7 +5,7 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * @author User
+ * @author wyz
  */
 @Data
 public class User {

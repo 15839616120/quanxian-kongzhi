@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * 接口执行权限注解
- * @author User
+ * @author wyz
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)

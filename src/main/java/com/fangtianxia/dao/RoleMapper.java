@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 
 
 /**
- * @author User
+ * @author wyz
  */
 @Mapper
 public interface RoleMapper {

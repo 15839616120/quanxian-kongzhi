@@ -13,6 +13,9 @@ import org.springframework.core.io.support.ResourcePatternResolver;
 import javax.sql.DataSource;
 import java.io.IOException;
 
+/**
+ * @author wyz
+ */
 @Configuration
 public class SessionFactoryConfiguration {
 

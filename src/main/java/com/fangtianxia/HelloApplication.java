@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *两步：
  * 1.在当前类上添加@SpringBootApplication注解
  * 2.在主方法中指定当前类为引导类
- * @author User
+ * @author wyz
  */
 @SpringBootApplication
 public class HelloApplication {

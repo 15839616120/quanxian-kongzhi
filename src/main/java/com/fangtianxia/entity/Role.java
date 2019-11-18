@@ -3,7 +3,7 @@ package com.fangtianxia.entity;
 import lombok.Data;
 
 /**
- * @author User
+ * @author wyz
  */
 @Data
 public class Role {
