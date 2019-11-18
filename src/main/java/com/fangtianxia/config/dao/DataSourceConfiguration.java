@@ -1,5 +1,6 @@
 package com.fangtianxia.config.dao;
 
+import com.alibaba.druid.pool.DruidDataSource;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Value;
@@ -26,6 +27,23 @@ public class DataSourceConfiguration {
     private String jdbcPassword;
 
     @Bean(name = "dataSource")
+    public DruidDataSource getDataSource() throws PropertyVetoException {
+        // 生成datasource实例
+        DruidDataSource dataSource = new DruidDataSource();
+        // 跟配置文件一样设置以下信息
+        // 驱动
+        dataSource.setDriverClassName(jdbcDriver);
+        // 数据库连接URL
+        dataSource.setUrl(jdbcUrl);
+        // 设置用户名
+        dataSource.setUsername(jdbcUsername);
+        // 设置用户密码
+        dataSource.setPassword(jdbcPassword);
+
+        return dataSource;
+    }
+
+    /*@Bean(name = "dataSource")
     public ComboPooledDataSource createDataSource() throws PropertyVetoException {
         // 生成datasource实例
         ComboPooledDataSource dataSource = new ComboPooledDataSource();
@@ -50,6 +68,6 @@ public class DataSourceConfiguration {
         // 连接失败重试次数
         dataSource.setAcquireRetryAttempts(2);
         return dataSource;
-    }
+    }*/
 
 }
