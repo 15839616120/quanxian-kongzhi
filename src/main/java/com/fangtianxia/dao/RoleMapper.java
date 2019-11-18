@@ -12,5 +12,4 @@ public interface RoleMapper {
 
     Role selectRoleById(Long id);
 
-
 }

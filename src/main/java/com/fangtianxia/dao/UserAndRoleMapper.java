@@ -9,6 +9,7 @@ import java.util.List;
  */
 @Mapper
 public interface UserAndRoleMapper {
+
     List<Long> selectUserAndRoleById(Long id);
 
 }
